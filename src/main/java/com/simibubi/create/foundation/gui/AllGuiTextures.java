@@ -1,10 +1,9 @@
 package com.simibubi.create.foundation.gui;
 
 import com.simibubi.create.Create;
+import com.simibubi.create.foundation.utility.GuiRenderableTexture;
 
-import net.createmod.catnip.gui.TextureSheetSegment;
 import net.createmod.catnip.gui.UIRenderHelper;
-import net.createmod.catnip.gui.element.ScreenElement;
 import net.createmod.catnip.theme.Color;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.resources.ResourceLocation;
@@ -12,7 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 
-public enum AllGuiTextures implements ScreenElement, TextureSheetSegment {
+public enum AllGuiTextures implements GuiRenderableTexture {
 
 	// Inventories
 	PLAYER_INVENTORY("player_inventory", 176, 108),
