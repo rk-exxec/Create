@@ -338,7 +338,7 @@ public class StationScreen extends AbstractStationScreen {
 		if (!mapModsPresent())
 			return;
 
-		AllGuiTextures sprite = AllGuiTextures.TRAINMAP_SPRITES;
+		GuiRenderableTexture sprite = AllGuiTextures.TRAINMAP_SPRITES;
 		sprite.bind();
 		int trainColorIndex = colorTypeScroll.getState();
 		int colorRow = trainColorIndex / 4;

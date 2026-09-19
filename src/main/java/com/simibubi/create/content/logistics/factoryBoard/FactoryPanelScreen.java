@@ -251,7 +251,7 @@ public class FactoryPanelScreen extends AbstractSimiScreen {
 		int y = guiTop;
 
 		// BG
-		AllGuiTextures bg = restocker ? FACTORY_GAUGE_RESTOCK : FACTORY_GAUGE_RECIPE;
+		GuiRenderableTexture bg = restocker ? FACTORY_GAUGE_RESTOCK : FACTORY_GAUGE_RECIPE;
 		if (restocker)
 			FACTORY_GAUGE_RECIPE.render(graphics, x, y - 16);
 		bg.render(graphics, x, y);

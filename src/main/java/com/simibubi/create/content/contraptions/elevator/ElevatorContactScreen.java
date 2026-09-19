@@ -27,7 +27,7 @@ import net.minecraft.util.FormattedCharSequence;
 
 public class ElevatorContactScreen extends AbstractSimiScreen {
 
-	private AllGuiTextures background;
+	private GuiRenderableTexture background;
 
 	private EditBox shortNameInput;
 	private EditBox longNameInput;

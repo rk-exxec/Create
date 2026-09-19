@@ -14,7 +14,7 @@ public class FanHauntingCategory extends ProcessingViaFanCategory.MultiOutput<Ha
 	}
 
 	@Override
-	protected AllGuiTextures getBlockShadow() {
+	protected GuiRenderableTexture getBlockShadow() {
 		return AllGuiTextures.JEI_LIGHT;
 	}
 

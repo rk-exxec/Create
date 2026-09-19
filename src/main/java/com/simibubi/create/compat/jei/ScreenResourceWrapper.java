@@ -6,9 +6,9 @@ import net.minecraft.client.gui.GuiGraphics;
 
 public class ScreenResourceWrapper implements IDrawable {
 
-	private AllGuiTextures resource;
+	private GuiRenderableTexture resource;
 
-	public ScreenResourceWrapper(AllGuiTextures resource) {
+	public ScreenResourceWrapper(GuiRenderableTexture resource) {
 		this.resource = resource;
 	}
 

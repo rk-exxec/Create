@@ -24,7 +24,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class LinkedControllerScreen extends AbstractSimiContainerScreen<LinkedControllerMenu> {
 
-	protected AllGuiTextures background;
+	protected GuiRenderableTexture background;
 	private List<Rect2i> extraAreas = Collections.emptyList();
 
 	private IconButton resetButton;

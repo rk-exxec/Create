@@ -35,7 +35,7 @@ public class SchematicEditScreen extends AbstractSimiScreen {
 	private final Component rotationLabel = CreateLang.translateDirect("schematic.rotation");
 	private final Component mirrorLabel = CreateLang.translateDirect("schematic.mirror");
 
-	private AllGuiTextures background;
+	private GuiRenderableTexture background;
 
 	private EditBox xInput;
 	private EditBox yInput;

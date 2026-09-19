@@ -21,7 +21,7 @@ public class Indicator extends AbstractSimiWidget {
 	public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTicks ) {
 		if (!visible)
 			return;
-		AllGuiTextures toDraw;
+		GuiRenderableTexture toDraw;
 		switch (state) {
 			case ON: toDraw = AllGuiTextures.INDICATOR_WHITE; break;
 			case OFF: toDraw = AllGuiTextures.INDICATOR; break;

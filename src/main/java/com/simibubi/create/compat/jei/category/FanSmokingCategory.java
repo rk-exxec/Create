@@ -14,7 +14,7 @@ public class FanSmokingCategory extends ProcessingViaFanCategory<SmokingRecipe> 
 	}
 
 	@Override
-	protected AllGuiTextures getBlockShadow() {
+	protected GuiRenderableTexture getBlockShadow() {
 		return AllGuiTextures.JEI_LIGHT;
 	}
 

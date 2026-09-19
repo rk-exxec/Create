@@ -43,7 +43,7 @@ public class ThresholdSwitchScreen extends AbstractSimiScreen {
 	private final Component invertSignal = CreateLang.translateDirect("gui.threshold_switch.invert_signal");
 	private final ItemStack renderedItem = new ItemStack(AllBlocks.THRESHOLD_SWITCH.get());
 
-	private AllGuiTextures background;
+	private GuiRenderableTexture background;
 	private ThresholdSwitchBlockEntity blockEntity;
 	private int lastModification;
 
@@ -146,7 +146,7 @@ public class ThresholdSwitchScreen extends AbstractSimiScreen {
 
 		ThresholdType typeOfCurrentTarget = blockEntity.getTypeOfCurrentTarget();
 		boolean forItems = typeOfCurrentTarget == ThresholdType.ITEM;
-		AllGuiTextures inputBg =
+		GuiRenderableTexture inputBg =
 			forItems ? AllGuiTextures.THRESHOLD_SWITCH_ITEMCOUNT_INPUTS : AllGuiTextures.THRESHOLD_SWITCH_MISC_INPUTS;
 
 		inputBg.render(graphics, x + 44, y + 21);

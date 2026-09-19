@@ -83,7 +83,7 @@ public abstract class ProcessingViaFanCategory<T extends Recipe<?>> extends Crea
 		AllGuiTextures.JEI_LONG_ARROW.render(graphics, 54, 51);
 	}
 
-	protected AllGuiTextures getBlockShadow() {
+	protected GuiRenderableTexture getBlockShadow() {
 		return AllGuiTextures.JEI_SHADOW;
 	}
 

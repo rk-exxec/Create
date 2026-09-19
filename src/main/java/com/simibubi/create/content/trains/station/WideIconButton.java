@@ -13,7 +13,7 @@ public class WideIconButton extends IconButton {
 	}
 
 	@Override
-	protected void drawBg(GuiGraphics graphics, AllGuiTextures button) {
+	protected void drawBg(GuiGraphics graphics, GuiRenderableTexture button) {
 		super.drawBg(graphics, button);
 		graphics.blit(button.location, getX() + 9, getY(), button.getStartX() + 1, button.getStartY(), button.getWidth() - 1, button.getHeight());
 	}

@@ -71,7 +71,7 @@ public class ToolSelectionScreen extends Screen {
 		matrixStack.pushPose();
 		matrixStack.translate(0, -yOffset, focused ? 100 : 0);
 
-		AllGuiTextures gray = AllGuiTextures.HUD_BACKGROUND;
+		GuiRenderableTexture gray = AllGuiTextures.HUD_BACKGROUND;
 		RenderSystem.enableBlend();
 		RenderSystem.setShaderColor(1, 1, 1, focused ? 7 / 8f : 1 / 2f);
 

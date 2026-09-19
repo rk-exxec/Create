@@ -203,7 +203,7 @@ public abstract class CreateRecipeCategory<T extends Recipe<?>> implements IReci
 		}
 	}
 
-	protected static IDrawable asDrawable(AllGuiTextures texture) {
+	protected static IDrawable asDrawable(GuiRenderableTexture texture) {
 		return new IDrawable() {
 			@Override
 			public int getWidth() {

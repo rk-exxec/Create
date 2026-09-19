@@ -30,7 +30,7 @@ import net.minecraft.world.phys.Vec3;
 
 public class SymmetryWandScreen extends AbstractSimiScreen {
 
-	private AllGuiTextures background;
+	private GuiRenderableTexture background;
 
 	private ScrollInput areaType;
 	private Label labelType;

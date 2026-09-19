@@ -382,7 +382,7 @@ public class BlueprintOverlayRenderer {
 				.render(guiGraphics);
 		} else {
 			for (ItemStack result : results) {
-				AllGuiTextures slot = resultCraftable ? AllGuiTextures.HOTSLOT_SUPER_ACTIVE : AllGuiTextures.HOTSLOT;
+				GuiRenderableTexture slot = resultCraftable ? AllGuiTextures.HOTSLOT_SUPER_ACTIVE : AllGuiTextures.HOTSLOT;
 				if (!invalidShop && shopContext != null && shopContext.stockLevel() > shopContext.purchases())
 					slot = AllGuiTextures.HOTSLOT_ACTIVE;
 				slot.render(guiGraphics, resultCraftable ? x - 1 : x, resultCraftable ? y - 1 : y);
