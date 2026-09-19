@@ -263,7 +263,7 @@ public enum AllGuiTextures implements GuiRenderableTexture {
 
 	public static final int FONT_COLOR = 0x575F7A;
 
-	public final ResourceLocation location;
+	private final ResourceLocation location;
 	private final int width;
 	private final int height;
 	private final int startX;
