@@ -3,6 +3,7 @@ package com.simibubi.create.foundation.gui.widget;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.simibubi.create.AllKeys;
 import com.simibubi.create.foundation.gui.AllGuiTextures;
+import com.simibubi.create.foundation.utility.GuiRenderableTexture;
 
 import net.createmod.catnip.gui.element.ScreenElement;
 import net.createmod.catnip.gui.widget.AbstractSimiWidget;
@@ -41,7 +42,7 @@ public class IconButton extends AbstractSimiWidget {
 	}
 
 	protected void drawBg(GuiGraphics graphics, GuiRenderableTexture button) {
-		graphics.blit(button.location, getX(), getY(), button.getStartX(), button.getStartY(), button.getWidth(),
+		graphics.blit(button.getLocation(), getX(), getY(), button.getStartX(), button.getStartY(), button.getWidth(),
 			button.getHeight());
 	}
 

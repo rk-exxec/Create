@@ -25,6 +25,7 @@ import com.simibubi.create.content.trains.graph.TrackNodeLocation;
 import com.simibubi.create.content.trains.station.GlobalStation;
 import com.simibubi.create.content.trains.track.BezierConnection;
 import com.simibubi.create.foundation.gui.AllGuiTextures;
+import com.simibubi.create.foundation.utility.GuiRenderableTexture;
 import com.simibubi.create.foundation.utility.CreateLang;
 import com.simibubi.create.infrastructure.config.AllConfigs;
 import com.simibubi.create.infrastructure.config.CClient;
@@ -421,7 +422,7 @@ public class TrainMapManager {
 					int sheetX = col * 16 + colorCol * 128;
 					int sheetY = row * 16 + colorRow * 64;
 
-					graphics.blit(sprite.location, positionX, positionY, sheetX, sheetY, 16, 16, sprite.getWidth(),
+					graphics.blit(sprite.getLocation(), positionX, positionY, sheetX, sheetY, 16, 16, sprite.getWidth(),
 						sprite.getHeight());
 				}
 

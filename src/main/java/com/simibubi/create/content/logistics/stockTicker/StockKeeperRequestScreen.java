@@ -38,6 +38,7 @@ import com.simibubi.create.content.processing.burner.BlazeBurnerBlockEntity;
 import com.simibubi.create.content.processing.burner.BlazeBurnerRenderer;
 import com.simibubi.create.content.trains.station.NoShadowFontWrapper;
 import com.simibubi.create.foundation.gui.AllGuiTextures;
+import com.simibubi.create.foundation.utility.GuiRenderableTexture;
 import com.simibubi.create.foundation.gui.menu.AbstractSimiContainerScreen;
 import com.simibubi.create.foundation.gui.widget.ScrollInput;
 import com.simibubi.create.foundation.utility.CreateLang;
@@ -734,7 +735,7 @@ public class StockKeeperRequestScreen extends AbstractSimiContainerScreen<StockK
 			ms.pushPose();
 			ms.translate(0, (currentScroll * rowHeight) / totalH * (windowH - 2), 0);
 			GuiRenderableTexture pad = AllGuiTextures.STOCK_KEEPER_REQUEST_SCROLL_PAD;
-			graphics.blit(pad.location, barX, barY, pad.getWidth(), barSize, pad.getStartX(), pad.getStartY(),
+			graphics.blit(pad.getLocation(), barX, barY, pad.getWidth(), barSize, pad.getStartX(), pad.getStartY(),
 				pad.getWidth(), pad.getHeight(), 256, 256);
 			AllGuiTextures.STOCK_KEEPER_REQUEST_SCROLL_TOP.render(graphics, barX, barY);
 			if (barSize > 16)
@@ -937,7 +938,7 @@ public class StockKeeperRequestScreen extends AbstractSimiContainerScreen<StockK
 			}
 
 			RenderSystem.enableBlend();
-			graphics.blit(NUMBERS.location, 14 + x, 10, 0, NUMBERS.getStartX() + xOffset, NUMBERS.getStartY(),
+			graphics.blit(NUMBERS.getLocation(), 14 + x, 10, 0, NUMBERS.getStartX() + xOffset, NUMBERS.getStartY(),
 				spriteWidth, NUMBERS.getHeight(), 256, 256);
 			x += spriteWidth - 1;
 		}

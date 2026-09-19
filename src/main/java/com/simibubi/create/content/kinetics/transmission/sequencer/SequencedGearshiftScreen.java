@@ -5,6 +5,7 @@ import java.util.Vector;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.compat.computercraft.ComputerScreen;
 import com.simibubi.create.foundation.gui.AllGuiTextures;
+import com.simibubi.create.foundation.utility.GuiRenderableTexture;
 import com.simibubi.create.foundation.gui.AllIcons;
 import com.simibubi.create.foundation.gui.widget.IconButton;
 import com.simibubi.create.foundation.gui.widget.ScrollInput;
