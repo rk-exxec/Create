@@ -14,6 +14,7 @@ import com.simibubi.create.AllBlocks;
 import com.simibubi.create.AllPackets;
 import com.simibubi.create.content.schematics.cannon.ConfigureSchematicannonPacket.Option;
 import com.simibubi.create.foundation.gui.AllGuiTextures;
+import com.simibubi.create.foundation.utility.GuiRenderableTexture;
 import com.simibubi.create.foundation.gui.AllIcons;
 import com.simibubi.create.foundation.gui.menu.AbstractSimiContainerScreen;
 import com.simibubi.create.foundation.gui.widget.IconButton;
@@ -324,12 +325,12 @@ public class SchematicannonScreen extends AbstractSimiContainerScreen<Schematica
 	protected void renderPrintingProgress(GuiGraphics graphics, int x, int y, float progress) {
 		progress = Math.min(progress, 1);
 		GuiRenderableTexture sprite = AllGuiTextures.SCHEMATICANNON_PROGRESS;
-		graphics.blit(sprite.location, x + 44, y + 64, sprite.getStartX(), sprite.getStartY(), (int) (sprite.getWidth() * progress), sprite.getHeight());
+		graphics.blit(sprite.getLocation(), x + 44, y + 64, sprite.getStartX(), sprite.getStartY(), (int) (sprite.getWidth() * progress), sprite.getHeight());
 	}
 
 	protected void renderChecklistPrinterProgress(GuiGraphics graphics, int x, int y, float progress) {
 		GuiRenderableTexture sprite = AllGuiTextures.SCHEMATICANNON_CHECKLIST_PROGRESS;
-		graphics.blit(sprite.location, x + 154, y + 20, sprite.getStartX(), sprite.getStartY(), (int) (sprite.getWidth() * progress),
+		graphics.blit(sprite.getLocation(), x + 154, y + 20, sprite.getStartX(), sprite.getStartY(), (int) (sprite.getWidth() * progress),
 			sprite.getHeight());
 	}
 
@@ -339,7 +340,7 @@ public class SchematicannonScreen extends AbstractSimiContainerScreen<Schematica
 			AllGuiTextures.SCHEMATICANNON_FUEL_CREATIVE.render(graphics, x + 36, y + 19);
 			return;
 		}
-		graphics.blit(sprite.location, x + 36, y + 19, sprite.getStartX(), sprite.getStartY(), (int) (sprite.getWidth() * amount), sprite.getHeight());
+		graphics.blit(sprite.getLocation(), x + 36, y + 19, sprite.getStartX(), sprite.getStartY(), (int) (sprite.getWidth() * amount), sprite.getHeight());
 	}
 
 	@Override
