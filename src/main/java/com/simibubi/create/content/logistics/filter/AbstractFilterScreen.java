@@ -24,13 +24,13 @@ import net.minecraft.world.entity.player.Inventory;
 
 public abstract class AbstractFilterScreen<F extends AbstractFilterMenu> extends AbstractSimiContainerScreen<F> {
 
-	protected AllGuiTextures background;
+	protected GuiRenderableTexture background;
 	private List<Rect2i> extraAreas = Collections.emptyList();
 
 	private IconButton resetButton;
 	private IconButton confirmButton;
 
-	protected AbstractFilterScreen(F menu, Inventory inv, Component title, AllGuiTextures background) {
+	protected AbstractFilterScreen(F menu, Inventory inv, Component title, GuiRenderableTexture background) {
 		super(menu, inv, title);
 		this.background = background;
 	}

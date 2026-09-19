@@ -276,8 +276,8 @@ public class TrainMapManager {
 					+ (Math.atan2(diff.z, diff.x) * Mth.RAD_TO_DEG + 90 + (station.isPrimary(node) ? 180 : 0)) / 45),
 					8);
 
-				AllGuiTextures sprite = AllGuiTextures.TRAINMAP_STATION_ORTHO;
-				AllGuiTextures highlightSprite = AllGuiTextures.TRAINMAP_STATION_ORTHO_HIGHLIGHT;
+				GuiRenderableTexture sprite = AllGuiTextures.TRAINMAP_STATION_ORTHO;
+				GuiRenderableTexture highlightSprite = AllGuiTextures.TRAINMAP_STATION_ORTHO_HIGHLIGHT;
 				if (rotation % 2 != 0) {
 					sprite = AllGuiTextures.TRAINMAP_STATION_DIAGO;
 					highlightSprite = AllGuiTextures.TRAINMAP_STATION_DIAGO_HIGHLIGHT;
@@ -377,7 +377,7 @@ public class TrainMapManager {
 					rotation =
 						Mth.positiveModulo((AnimationTickHolder.getTicks() / 8 + i * 3) * (i % 2 == 0 ? 1 : -1), 8);
 
-				AllGuiTextures sprite = AllGuiTextures.TRAINMAP_SPRITES;
+				GuiRenderableTexture sprite = AllGuiTextures.TRAINMAP_SPRITES;
 
 				int slices = 2;
 

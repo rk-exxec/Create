@@ -28,7 +28,7 @@ public abstract class ZapperScreen extends AbstractSimiScreen {
 
 	protected final Component patternSection = CreateLang.translateDirect("gui.terrainzapper.patternSection");
 
-	protected AllGuiTextures background;
+	protected GuiRenderableTexture background;
 	protected ItemStack zapper;
 	protected InteractionHand hand;
 
@@ -42,7 +42,7 @@ public abstract class ZapperScreen extends AbstractSimiScreen {
 
 	protected PlacementPatterns currentPattern;
 
-	public ZapperScreen(AllGuiTextures background, ItemStack zapper, InteractionHand hand) {
+	public ZapperScreen(GuiRenderableTexture background, ItemStack zapper, InteractionHand hand) {
 		this.background = background;
 		this.zapper = zapper;
 		this.hand = hand;

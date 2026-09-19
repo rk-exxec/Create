@@ -25,7 +25,7 @@ import static com.simibubi.create.foundation.gui.AllGuiTextures.PLAYER_INVENTORY
 
 public class BlueprintScreen extends AbstractSimiContainerScreen<BlueprintMenu> {
 
-	protected AllGuiTextures background;
+	protected GuiRenderableTexture background;
 	private List<Rect2i> extraAreas = Collections.emptyList();
 
 	private IconButton resetButton;

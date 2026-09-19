@@ -28,8 +28,8 @@ import net.minecraft.world.item.ItemStack;
 
 public class ToolboxScreen extends AbstractSimiContainerScreen<ToolboxMenu> {
 
-	protected static final AllGuiTextures BG = AllGuiTextures.TOOLBOX;
-	protected static final AllGuiTextures PLAYER = AllGuiTextures.PLAYER_INVENTORY;
+	protected static final GuiRenderableTexture BG = AllGuiTextures.TOOLBOX;
+	protected static final GuiRenderableTexture PLAYER = AllGuiTextures.PLAYER_INVENTORY;
 
 	protected Slot hoveredToolboxSlot;
 	private IconButton confirmButton;

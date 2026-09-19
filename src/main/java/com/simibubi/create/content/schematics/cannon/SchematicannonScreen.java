@@ -35,8 +35,8 @@ import net.minecraft.world.item.ItemStack;
 
 public class SchematicannonScreen extends AbstractSimiContainerScreen<SchematicannonMenu> {
 
-	private static final AllGuiTextures BG_BOTTOM = AllGuiTextures.SCHEMATICANNON_BOTTOM;
-	private static final AllGuiTextures BG_TOP = AllGuiTextures.SCHEMATICANNON_TOP;
+	private static final GuiRenderableTexture BG_BOTTOM = AllGuiTextures.SCHEMATICANNON_BOTTOM;
+	private static final GuiRenderableTexture BG_TOP = AllGuiTextures.SCHEMATICANNON_TOP;
 
 	private final Component listPrinter = CreateLang.translateDirect("gui.schematicannon.listPrinter");
 	private final String _gunpowderLevel = "gui.schematicannon.gunpowderLevel";
@@ -323,18 +323,18 @@ public class SchematicannonScreen extends AbstractSimiContainerScreen<Schematica
 
 	protected void renderPrintingProgress(GuiGraphics graphics, int x, int y, float progress) {
 		progress = Math.min(progress, 1);
-		AllGuiTextures sprite = AllGuiTextures.SCHEMATICANNON_PROGRESS;
+		GuiRenderableTexture sprite = AllGuiTextures.SCHEMATICANNON_PROGRESS;
 		graphics.blit(sprite.location, x + 44, y + 64, sprite.getStartX(), sprite.getStartY(), (int) (sprite.getWidth() * progress), sprite.getHeight());
 	}
 
 	protected void renderChecklistPrinterProgress(GuiGraphics graphics, int x, int y, float progress) {
-		AllGuiTextures sprite = AllGuiTextures.SCHEMATICANNON_CHECKLIST_PROGRESS;
+		GuiRenderableTexture sprite = AllGuiTextures.SCHEMATICANNON_CHECKLIST_PROGRESS;
 		graphics.blit(sprite.location, x + 154, y + 20, sprite.getStartX(), sprite.getStartY(), (int) (sprite.getWidth() * progress),
 			sprite.getHeight());
 	}
 
 	protected void renderFuelBar(GuiGraphics graphics, int x, int y, float amount) {
-		AllGuiTextures sprite = AllGuiTextures.SCHEMATICANNON_FUEL;
+		GuiRenderableTexture sprite = AllGuiTextures.SCHEMATICANNON_FUEL;
 		if (menu.contentHolder.hasCreativeCrate) {
 			AllGuiTextures.SCHEMATICANNON_FUEL_CREATIVE.render(graphics, x + 36, y + 19);
 			return;

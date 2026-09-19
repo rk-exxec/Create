@@ -49,7 +49,7 @@ public class DisplayLinkScreen extends AbstractSimiScreen {
 
 	private static final ItemStack FALLBACK = new ItemStack(Items.BARRIER);
 
-	private AllGuiTextures background;
+	private GuiRenderableTexture background;
 	private DisplayLinkBlockEntity blockEntity;
 	private IconButton confirmButton;
 

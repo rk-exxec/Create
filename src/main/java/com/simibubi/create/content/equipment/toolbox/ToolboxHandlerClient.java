@@ -187,7 +187,7 @@ public class ToolboxHandlerClient {
 			double max = ToolboxHandler.getMaxRange(player);
 			boolean selected = player.getInventory().selected == slot;
 			int offset = selected ? 1 : 0;
-			AllGuiTextures texture = ToolboxHandler.distance(player.position(), pos) < max * max
+			GuiRenderableTexture texture = ToolboxHandler.distance(player.position(), pos) < max * max
 				? selected ? TOOLBELT_SELECTED_ON : TOOLBELT_HOTBAR_ON
 				: selected ? TOOLBELT_SELECTED_OFF : TOOLBELT_HOTBAR_OFF;
 			texture.render(graphics, x + 20 * slot - offset, y + offset);

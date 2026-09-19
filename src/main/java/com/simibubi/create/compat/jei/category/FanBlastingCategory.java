@@ -14,7 +14,7 @@ public class FanBlastingCategory extends ProcessingViaFanCategory<AbstractCookin
 	}
 
 	@Override
-	protected AllGuiTextures getBlockShadow() {
+	protected GuiRenderableTexture getBlockShadow() {
 		return AllGuiTextures.JEI_LIGHT;
 	}
 

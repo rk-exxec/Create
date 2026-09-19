@@ -39,7 +39,7 @@ public class SchematicTableScreen extends AbstractSimiContainerScreen<SchematicT
 	private final Component noSchematics = CreateLang.translateDirect("gui.schematicTable.noSchematics");
 	private final Component availableSchematicsTitle = CreateLang.translateDirect("gui.schematicTable.availableSchematics");
 
-	protected AllGuiTextures background;
+	protected GuiRenderableTexture background;
 
 	private ScrollInput schematicsArea;
 	private IconButton confirmButton;
